@@ -110,7 +110,7 @@ router.put("/update/:id", validateSession, async (req, res) => {
     cardYear,
     cardNumber,
     cardDescription,
-  } = req.body;
+  } = req.body.Sportscard;
   try {
     const updateSportscard = await SportscardModel.update(
       {
