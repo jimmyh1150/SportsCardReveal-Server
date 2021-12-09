@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "69df4f47b9ab4c8b910d6753b0c5b6f0", //2
+    "database": "sportscard-reveal",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "69df4f47b9ab4c8b910d6753b0c5b6f0",
+    "database": "sportscard-reveal",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "69df4f47b9ab4c8b910d6753b0c5b6f0",
+    "database": "sportcard-reveal",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "dialect": "postgres"
+  }
+}
