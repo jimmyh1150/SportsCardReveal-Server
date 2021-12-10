@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { CommentsModel } = require("../models");
 const { validateSession } = require("../middleware");
+// const test
 
 router.post("/comment", validateSession, async (req, res) => {
   const { content, sportscardId } = req.body.comment;
