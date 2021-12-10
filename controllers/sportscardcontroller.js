@@ -81,23 +81,6 @@ router.get("/mine", validateSession, async (req, res) => {
       .json({ error: `Failed to fetch user Sports Cards: ${err}` });
   }
 });
-/*
-====================================
-Get All Sports Card by Player Name
-====================================
-*/
-
-/*
-==============================
-Get All Sports Cards by Year
-==============================
-*/
-
-/*
-======================
-EDIT SPORTS CARD ENTRY
-======================
-*/
 
 router.put("/update/:id", validateSession, async (req, res) => {
   const {

@@ -25,4 +25,17 @@ router.post("/comment/:id", validateSession, async (req, res) => {
   }
 });
 
+//this will only return every comment from database - not just by sportscardId
+router.get("/allComments/:id", validateSession, async (req, res) => {
+  const sportscardId = req.params.id;
+  try {
+    const cardComments = await CommentsModel.findAll({
+      sportscardId: sportscardId,
+    });
+    res.status(200).json(cardComments);
+  } catch (err) {
+    res.status(500).json({ error: `Failed to fetch Card Comments: ${err}` });
+  }
+});
+
 module.exports = router;
