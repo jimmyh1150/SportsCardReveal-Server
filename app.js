@@ -25,6 +25,7 @@ dbConnection
   .then(() => dbConnection.sync({}))
   .then(() => {
     app.listen(process.env.PORT, () => {
+      console.log(process.env.DATABASE_URL);
       console.log(`[Server]: App is listening on ${process.env.PORT}.`);
     });
   })
